@@ -23,8 +23,8 @@ int n = 10;
         //wypełnienie tabliczki
 
         i = 0;
-        while (i <=multi.length){
-            int j =0;
+        while (i < multi.length){
+            int j = 0;
             while (j < multi[i].length){
                 System.out.print(multi[i][j] + "\t");
                 j++;
@@ -32,6 +32,27 @@ int n = 10;
             System.out.println();
             i++;
         }
+                //Feature-1
+
+        //427 do 529
+        System.out.println("");
+        System.out.println("------------Feature2----------------");
+        System.out.println("");
+       int k = 427;
+     while (k < 530){
+         if ((k%3==0) && (k%5==0)) {
+             System.out.println("TikTak");
+         }
+
+           else if (k%3==0) {
+                System.out.println("Tik");
+            }
+           else if(k%5==0) {
+                    System.out.println("Tak");
+           }
+
+          k++;
+           }
 
 
     }
