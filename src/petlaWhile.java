@@ -1,9 +1,11 @@
+import javax.swing.plaf.SeparatorUI;
+
 public class petlaWhile {
 
     public static void main(String[] args) {
 
         //Feature-1
-int n = 10;
+int n = 6;
 
     int[][] multi = new int [n][n];
 
@@ -23,7 +25,7 @@ int n = 10;
         //wypełnienie tabliczki
 
         i = 0;
-        while (i <=multi.length){
+        while (i <multi.length){
             int j =0;
             while (j < multi[i].length){
                 System.out.print(multi[i][j] + "\t");
@@ -32,6 +34,22 @@ int n = 10;
             System.out.println();
             i++;
         }
+
+// ------------Feature-3----
+        n=6; i=0;
+        System.out.println("------------Feature-3----");
+        System.out.println("");
+                while (i<n){
+                    int j = 0;
+                    while (j<i){
+                        System.out.print("*");
+                      j++;
+                    }
+                    System.out.println("*");
+                    i++;
+                }
+
+
 
 
     }
