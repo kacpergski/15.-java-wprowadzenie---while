@@ -161,6 +161,7 @@ int n = 10;
         }
         // ------------Feature-6----
         System.out.println("------------Feature-6----");
+        System.out.println();
 
 
 
