@@ -164,7 +164,62 @@ int n = 10;
         System.out.println();
 
 
+// System.out.println();
+        System.out.println("------------Feature-5----");
 
+        n=3;
+        //int sudoku[][]= new int [n][n];
+        int [][]sudoku1 = {{2,0,0},{0,1,2},{1,2,0}};
+        // print sudoku
+
+        System.out.println("Sudoku with zero in empty places");
+        i = 0;
+        while (i < sudoku1.length){
+            j =0;
+            while (j < sudoku1.length){
+                System.out.print(sudoku1[i][j]);
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+        // prepare sudoku
+        i = 0;
+        while (i < sudoku1.length){
+            j =0; k=0; int a, b;
+            while (j < sudoku1.length){
+                if (sudoku1[i][j] == 0)
+                {   a = 6-(sudoku1[i][0]+sudoku1[i][1]+sudoku1[i][2]);
+                    b = 6-(sudoku1[0][j]+sudoku1[1][j]+sudoku1[2][j]);
+                    if (a<=3){
+                    sudoku1[i][j] = a;}
+                    else{
+                        sudoku1[i][j] = b;}
+                   // sudoku1[i][j] = 6-(sudoku1[i][0]+sudoku1[i][1]+sudoku1[i][2]);
+
+                }
+
+                // else
+                //  {sudoku1[i][j] = sudoku1[i][j];
+                //   }
+
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+        // print sudoku
+        System.out.println("Sudoku completed");
+        i = 0;
+        while (i < sudoku1.length){
+            j =0;
+            while (j < sudoku1.length){
+                System.out.print(sudoku1[i][j]);
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
 
 
 
