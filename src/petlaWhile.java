@@ -98,15 +98,15 @@ int n = 10;
         }
 
 
-           j=0;
-            while (j<i){
-                System.out.print("*");
-                //System.out.print("*");
-                j++;
-            }
-            System.out.print(" ");
-            System.out.println();
-            i++;
+//            j=0;
+//             while (j<i){
+//                 System.out.print("*");
+//                 //System.out.print("*");
+//                 j++;
+//             }
+//             System.out.print(" ");
+//             System.out.println();
+//             i++;
 
 // ------------Feature-5----
        // System.out.println();
